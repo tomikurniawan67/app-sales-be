@@ -1,0 +1,148 @@
+{
+  "info": {
+    "_postman_id": "a3901b41-b52c-4919-8e3c-c7c9c6689887",
+    "name": "App Sales Order",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "6240118"
+  },
+  "item": [
+    {
+      "name": "1. Login Backend API App Sales Order",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "username",
+              "value": "elisabeth.nanton",
+              "type": "text",
+              "uuid": "f004fdbf-5753-415f-99d4-5c726dfc20df"
+            },
+            {
+              "key": "password",
+              "value": "123123",
+              "type": "text",
+              "uuid": "07f16624-3a89-4665-9502-ac183851eef0"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost/app-sales-be/auth/login",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "app-sales-be",
+            "auth",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "2. Get Profile User",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NzM0NzU2MzUsImV4cCI6MTc3MzQ3OTIzNSwiZGF0YSI6eyJpZCI6IjciLCJ1c2VybmFtZSI6ImVsaXNhYmV0aC5uYW50b24iLCJlbXBsb3llZV9uYW1lIjoiRWxpc2FiZXRoIE5hbnRvbiIsImVtcGxveWVlX2lkIjoiUzAwNyJ9fQ.Fvli-AwVr7o0BruNgBlRf0q5yr3x3vxqcgP1xVZmxXc",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "username",
+              "value": "martin.lloyd",
+              "type": "text",
+              "uuid": "f004fdbf-5753-415f-99d4-5c726dfc20df"
+            },
+            {
+              "key": "password",
+              "value": "123123",
+              "type": "text",
+              "uuid": "07f16624-3a89-4665-9502-ac183851eef0"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost/app-sales-be/user/get_profile",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "app-sales-be",
+            "user",
+            "get_profile"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "3. Get Data Sales Order",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NzM0NzU2MzUsImV4cCI6MTc3MzQ3OTIzNSwiZGF0YSI6eyJpZCI6IjciLCJ1c2VybmFtZSI6ImVsaXNhYmV0aC5uYW50b24iLCJlbXBsb3llZV9uYW1lIjoiRWxpc2FiZXRoIE5hbnRvbiIsImVtcGxveWVlX2lkIjoiUzAwNyJ9fQ.Fvli-AwVr7o0BruNgBlRf0q5yr3x3vxqcgP1xVZmxXc",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "username",
+              "value": "martin.lloyd",
+              "type": "text",
+              "uuid": "f004fdbf-5753-415f-99d4-5c726dfc20df"
+            },
+            {
+              "key": "password",
+              "value": "123123",
+              "type": "text",
+              "uuid": "07f16624-3a89-4665-9502-ac183851eef0"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost/app-sales-be/user/get_data_sales",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "app-sales-be",
+            "user",
+            "get_data_sales"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
