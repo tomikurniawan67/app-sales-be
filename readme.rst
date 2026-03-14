@@ -6,6 +6,7 @@ Requirements :
 - PHP version 7.4.33 (using laragon or newer xampp)
 - MySQL version 8.0.33
 - CodeIgniter 3
+- Composer Update php-jwt
 
 *******************
 Example User
